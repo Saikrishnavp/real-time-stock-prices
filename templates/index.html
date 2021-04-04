@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.0.1/chart.min.js"></script>
+
+
+    <link rel="stylesheet" href="{% static 'style.css' %}" type="text/css">
+</head>
+<body>
+    <main>
+        <section class="glass">
+            <div class="dashboard">
+				<div class= "heading">
+					<h1>Live Coin Trade</h1>
+
+				</div>
+                <div class= "heading">
+                    <img id="image1" width="50px" height = 50px><h3 id="price1"></h3>
+                    <img id="image2" width="50px" height = 50px><h3 id="price2"></h3>
+                </div>
+				<div class = "graph">
+					<canvas id="myChart" width="400" height="200"></canvas>
+				</div>
+
+                <div><h3 id="date"></h3></div>
+				<script src ="{% static 'main.js' %}" ></script>
+            </div>
+
+
+
+
+
+
+
+
+        </section>
+    </main>
+    <div class="circle1"></div>
+    <div class="circle2"></div>
+</body>
+</html>
